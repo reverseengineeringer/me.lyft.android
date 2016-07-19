@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.achievements.dials.DriverApplicationDialView android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/span84" android:layout_height="wrap_content">
+        <com.lyft.widgets.CircularProgressView android:id="@id/progress_bar" android:layout_width="@dimen/span84" android:layout_height="@dimen/span84" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/news_feed_button_text" android:textStyle="bold" android:id="@id/progress_text" android:text="@string/stats_empty_progress" android:layout_centerInParent="true" style="@style/DriverStatsText" />
+    </RelativeLayout>
+</me.lyft.android.ui.driver.achievements.dials.DriverApplicationDialView>

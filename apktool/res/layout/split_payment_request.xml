@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/big_text_4" android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/split_payment_title_text" />
+            <FrameLayout android:layout_width="@dimen/span154" android:layout_height="@dimen/span154" android:layout_marginTop="@dimen/span20" android:layout_marginBottom="@dimen/span20" android:foreground="@drawable/split_fare_profile_image_frame">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@id/user_image" android:layout_width="fill_parent" android:layout_height="fill_parent" app:riv_oval="true" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/charcoal" android:gravity="center" android:id="@id/split_payment_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span12" />
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/stone" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/split_payment_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/stone" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/decline_button" android:background="@drawable/selectable_item" android:padding="@dimen/span12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/decline" android:drawableLeft="@drawable/ic_decline_grey" android:drawablePadding="@dimen/span6" />
+    </FrameLayout>
+    <Button android:layout_gravity="bottom|center" android:id="@id/accept_button" android:background="@drawable/btn_charcoal" android:layout_width="fill_parent" android:text="@string/accept_split_text" style="@style/FullBleedButton" />
+</LinearLayout>

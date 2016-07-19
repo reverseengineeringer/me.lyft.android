@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.onboarding.EnableLocationView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.onboarding.CarpoolDriverOnboardingToolbarView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/span40" android:paddingRight="@dimen/span40" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/big_text_3" android:textStyle="bold" android:textColor="@color/charcoal_2" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/enable_locations_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span24" android:text="@string/carpool_onboarding_location_title" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span36" android:src="@drawable/graphic_carpool_matching" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/enable_locations_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span36" android:text="@string/carpool_onboarding_location_message" style="@style/PrimaryText" />
+    </LinearLayout>
+    <Button android:id="@id/got_it_button" android:background="@drawable/btn_pink_rounded" android:layout_margin="@dimen/span8" android:text="@string/ok_button" style="@style/FullBleedButtonV2" />
+</me.lyft.android.ui.onboarding.EnableLocationView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.inride.EditPickupInRideView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ride_map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/pickup_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pin_pickup_map" android:layout_above="@id/passenger_ride_bottom" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageButton android:layout_gravity="bottom|center|left" android:id="@id/back_button" android:background="@drawable/circular_map_button" android:layout_marginLeft="@dimen/span8" android:src="@drawable/ic_back_arrow" android:layout_above="@id/passenger_ride_bottom" android:layout_alignParentLeft="true" style="@style/PassengerMapButton" />
+        <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/center_to_current_location_button" android:background="@drawable/circular_map_button" android:layout_marginRight="@dimen/span8" android:src="@drawable/btn_map_icon_selector" android:layout_above="@id/passenger_ride_bottom" android:layout_alignParentRight="true" style="@style/PassengerMapButton" />
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/passenger_ride_bottom" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/pickup_address_layout" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span6">
+                <TextView android:textColor="@color/charcoal" android:gravity="center" android:id="@id/banner_text_view" android:background="@drawable/bg_grey_rounded_top_corners" android:padding="@dimen/span4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/adjust_pickup_within_circle" android:textAllCaps="true" style="@style/PassengerFooterBanner" />
+                <View android:id="@id/divider" android:background="@drawable/horizontal_divider" android:layout_below="@id/banner_text_view" style="@style/HorizontalDialogDivider" />
+                <TextView android:textColor="@color/slate" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pickup_address_field" android:background="@drawable/selectable_item_translucent" android:paddingLeft="@dimen/span40" android:paddingRight="@dimen/span56" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/span52" android:maxLines="1" android:layout_below="@id/divider" style="@style/PrimaryText" />
+                <ImageView android:paddingLeft="@dimen/span16" android:paddingRight="@dimen/span8" android:layout_width="wrap_content" android:layout_height="@dimen/span52" android:src="@drawable/ic_dot_fill_mulberry" android:layout_below="@id/divider" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/set_pickup_button" android:background="@drawable/btn_mulberry_rounded" style="@style/FullBleedButtonV2" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/changing_pickup_progressbar" android:padding="@dimen/span12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/full_bleed_button_height_v2" style="@style/LoadingProgressBar" />
+            </FrameLayout>
+        </me.lyft.android.ui.HeightObservableLayout>
+    </RelativeLayout>
+    <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" layout="@layout/warning" />
+</me.lyft.android.ui.passenger.v2.inride.EditPickupInRideView>

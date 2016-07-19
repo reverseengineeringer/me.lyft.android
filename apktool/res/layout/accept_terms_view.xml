@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.ride.AcceptTermsView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/normal_text" android:textColor="@color/white" android:gravity="center" android:id="@id/tos_banner_text_view" android:background="@color/blue_1" android:padding="@dimen/span8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/span60" android:text="@string/update_tos_text" />
+    <include layout="@layout/new_web_preview" />
+    <Button android:id="@id/accept_button" android:visibility="gone" android:text="@string/terms_of_service_accept_button" style="@style/PinkFullBleedButton" />
+</me.lyft.android.ui.ride.AcceptTermsView>

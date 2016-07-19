@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.business.profile.BusinessProfileView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/email_list_item" android:layout_width="fill_parent" android:layout_height="66.0dip" style="@style/CellButton">
+        <ImageView android:id="@id/email_image_view" android:layout_width="@dimen/span24" android:layout_height="wrap_content" android:src="@drawable/cc_default_outlined" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/email_image_view" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@id/email_title_view" android:singleLine="true" style="@style/PrimaryText" />
+            <TextView android:ellipsize="end" android:id="@id/email_subtitle_view" android:visibility="gone" android:singleLine="true" style="@style/SecondaryText" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/payment_list_item" android:layout_width="fill_parent" android:layout_height="66.0dip" style="@style/CellButton">
+        <ImageView android:id="@id/payment_image_view" android:layout_width="@dimen/span24" android:layout_height="wrap_content" android:src="@drawable/ic_payment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/payment_image_view" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@id/payment_title_view" android:singleLine="true" style="@style/PrimaryText" />
+            <TextView android:ellipsize="end" android:id="@id/payment_subtitle_view" android:visibility="gone" android:singleLine="true" style="@style/SecondaryText" />
+        </LinearLayout>
+    </RelativeLayout>
+    <me.lyft.android.ui.payment.ConcurView android:id="@id/concur" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</me.lyft.android.ui.business.profile.BusinessProfileView>

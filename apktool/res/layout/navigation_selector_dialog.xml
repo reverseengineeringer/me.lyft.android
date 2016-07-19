@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.carpool.NavigationSelectorDialogView style="@style/DialogContainerView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/DialogView">
+        <TextView android:text="@string/select_navigation_title" style="@style/DialogTitle" />
+        <TextView android:layout_marginBottom="@dimen/span24" android:text="@string/select_navigation_message" style="@style/DialogMessage" />
+        <View style="@style/HorizontalDialogDivider" />
+        <ListView android:id="@id/navigators_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/grey_2" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" />
+        <View style="@style/HorizontalDialogDivider" />
+        <Button android:id="@id/navigate_button" android:text="@string/navigate_button" style="@style/DialogButtonWarning" />
+    </LinearLayout>
+</me.lyft.android.ui.driver.carpool.NavigationSelectorDialogView>

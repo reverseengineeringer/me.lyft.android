@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DialogView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_header_strip" android:layout="@layout/standard_dialog_header_strip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DialogHeader" />
+    <ViewStub android:id="@id/stub_header_view_container" android:layout="@layout/standard_dialog_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_content_view_container" android:layout="@layout/standard_dialog_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

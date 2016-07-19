@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/selectable_item" android:paddingLeft="@dimen/span16" android:paddingTop="@dimen/span16" android:paddingRight="@dimen/span8" android:paddingBottom="@dimen/span16" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/slate" android:id="@id/scheduled_rides_ride_type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/micro_text" android:textColor="@color/charcoal" android:id="@id/scheduled_rides_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:ellipsize="end" android:id="@id/scheduled_rides_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span2" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:id="@id/scheduled_rides_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:src="@drawable/icn_caret" />
+</LinearLayout>

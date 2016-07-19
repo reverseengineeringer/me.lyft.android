@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/map_widget_drop_shadow_color" />
+                    <stroke android:width="@dimen/span1" android:color="@color/map_widget_drop_shadow_color" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/bone" />
+                    <stroke android:width="@dimen/span1" android:color="@color/map_widget_drop_shadow_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/map_widget_drop_shadow_color" />
+                    <stroke android:width="@dimen/span1" android:color="@color/map_widget_drop_shadow_color" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/bone" />
+                    <stroke android:width="@dimen/span1" android:color="@color/map_widget_drop_shadow_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/map_widget_drop_shadow_color" />
+                    <stroke android:width="@dimen/span1" android:color="@color/map_widget_drop_shadow_color" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white" />
+                    <stroke android:width="@dimen/span1" android:color="@color/map_widget_drop_shadow_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

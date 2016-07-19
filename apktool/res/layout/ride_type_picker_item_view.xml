@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo_image_view" android:layout_width="@dimen/span60" android:layout_height="fill_parent" android:scaleType="center" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_16" android:textColor="@drawable/ride_type_selector_label" android:ellipsize="end" android:id="@id/label_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="@dimen/span4" />
+            <TextView android:textSize="@dimen/nano_text" android:textStyle="bold" android:textColor="@color/white" android:id="@id/new_item_hint" android:background="@drawable/bg_pink_rounded" android:paddingLeft="@dimen/span6" android:paddingRight="@dimen/span6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span6" android:text="@string/new_item_label" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/xsmall_text" android:textColor="@drawable/ride_type_selector_sublabel" android:ellipsize="end" android:gravity="left" android:id="@id/sub_label_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/eta_container_view" android:paddingRight="@dimen/span16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_16" android:textColor="@drawable/ride_type_selector_sublabel" android:gravity="center" android:id="@id/eta_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/xsmall_text" android:textColor="@drawable/ride_type_selector_sublabel" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min" />
+    </LinearLayout>
+</merge>

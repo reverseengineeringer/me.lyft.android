@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.inride.CarpoolInRideView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/passenger_ride_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+        </me.lyft.android.ui.HeightObservableLayout>
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" layout="@layout/warning" />
+        <FrameLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/center_to_current_location_button" android:background="@drawable/circular_map_button" android:layout_marginRight="@dimen/span8" android:src="@drawable/btn_map_icon_selector" style="@style/PassengerMapButton" />
+        </FrameLayout>
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/passenger_ride_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.ui.passenger.v2.inride.RideFooterView android:orientation="vertical" android:id="@id/ride_footer_view" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/span8" />
+        </me.lyft.android.ui.HeightObservableLayout>
+    </LinearLayout>
+</me.lyft.android.ui.passenger.v2.inride.CarpoolInRideView>

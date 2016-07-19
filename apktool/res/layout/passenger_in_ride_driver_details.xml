@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.inride.DriverDetailView android:orientation="horizontal" android:id="@id/driver_detail_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.33"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span4" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/car_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/car_license_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/span2" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/span80" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span4" android:layout_weight="1.33">
+        <ImageView android:layout_gravity="left" android:id="@id/car_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+        <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center|right" android:id="@id/driver_image_view" android:layout_width="@dimen/span60" android:layout_height="@dimen/span60" android:scaleType="centerCrop" app:riv_border_width="@dimen/span2" app:riv_border_color="@color/dove" app:riv_oval="true" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span4" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/driver_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/driver_rating_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/star_fill" android:drawablePadding="@dimen/span2" />
+    </LinearLayout>
+</me.lyft.android.ui.passenger.v2.inride.DriverDetailView>

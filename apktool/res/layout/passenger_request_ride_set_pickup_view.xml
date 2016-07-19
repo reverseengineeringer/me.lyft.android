@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.request.pickup.SetPickupView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <me.lyft.android.ui.passenger.PromoBannerView android:id="@id/banner" android:background="@drawable/selectable_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/span44" />
+        <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <me.lyft.android.ui.passenger.v2.request.pickup.PickupEtaPin android:id="@id/pickup_eta_pin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/container_bottom" android:layout_below="@id/container_top" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <include android:id="@id/warning_fragment_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" android:layout_below="@id/container_top" android:layout_centerHorizontal="true" layout="@layout/warning" />
+    <ImageButton android:id="@id/center_to_current_location_button" android:background="@drawable/circular_map_button" android:layout_marginRight="@dimen/span8" android:src="@drawable/btn_map_icon_selector" android:layout_above="@id/container_bottom" android:layout_alignParentRight="true" style="@style/PassengerMapButton" />
+    <me.lyft.android.ui.passenger.v2.request.pickup.RideTypeSelectionView android:layout_gravity="bottom" android:id="@id/ride_type_selector_view" android:background="@drawable/bg_map_widget_item" android:visibility="visible" android:layout_width="@dimen/span256" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_above="@id/container_bottom" android:layout_alignParentLeft="true" />
+    <me.lyft.android.ui.passenger.v2.request.pickup.ScheduledRidesPicker android:orientation="vertical" android:id="@id/scheduled_rides_picker" android:background="@drawable/bg_map_widget_item" android:visibility="gone" android:layout_width="@dimen/span256" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span8" android:layout_below="@id/container_top" android:layout_alignParentRight="true" />
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_bottom" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <me.lyft.android.ui.passenger.v2.request.pickup.RideTypePickupAddressView android:id="@id/pickup_input_field" android:layout_width="fill_parent" android:layout_height="@dimen/span60" android:layout_marginBottom="@dimen/span6" />
+        <Button android:id="@id/set_pickup_button" android:background="@drawable/btn_gradient_dark_blue_rounded" android:text="@string/set_pickup_button" style="@style/FullBleedButtonV2" />
+    </me.lyft.android.ui.HeightObservableLayout>
+</me.lyft.android.ui.passenger.v2.request.pickup.SetPickupView>

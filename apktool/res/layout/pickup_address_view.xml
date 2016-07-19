@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/pickup_address_field_tap_area" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/span52" />
+    <TextView android:textColor="@color/slate" android:gravity="center_vertical" android:id="@id/pickup_address_field" android:background="@drawable/selectable_item_translucent" android:paddingLeft="@dimen/span40" android:paddingRight="@dimen/span68" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/span52" android:singleLine="true" style="@style/PrimaryText" />
+    <ImageView android:layout_width="@dimen/span8" android:layout_height="@dimen/span8" android:layout_marginLeft="@dimen/span16" android:src="@drawable/ic_dot_fill_mulberry" android:layout_alignBottom="@id/pickup_address_field" android:layout_alignParentTop="true" />
+</merge>

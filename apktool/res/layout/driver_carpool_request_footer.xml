@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.carpool.DriverCarpoolRequestFooterView android:orientation="vertical" android:id="@id/carpool_request_footer" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/heading" android:background="@drawable/bg_grey_rounded_top_corners" android:padding="@dimen/span8" android:layout_width="fill_parent" android:maxLines="1" android:textAllCaps="true" style="@style/PassengerFooterBanner" />
+    <View style="@style/HorizontalDialogDivider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/span16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/normal_text" android:ellipsize="end" android:id="@id/passenger_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/CarpoolPrimaryText" />
+            <TextView android:textSize="@dimen/small_text" android:textColor="@color/dove" android:id="@id/passenger_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/star_fill" android:drawablePadding="@dimen/span2" />
+        </LinearLayout>
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/profile_photo" android:background="@drawable/profile_placeholder" android:layout_width="@dimen/span58" android:layout_height="@dimen/span58" android:layout_margin="@dimen/span4" app:riv_border_width="@dimen/span2" app:riv_border_color="@color/dove" app:riv_oval="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/normal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_earnings_label" style="@style/CarpoolPrimaryText" />
+            <TextView android:textSize="@dimen/small_text" android:textColor="@color/dove" android:id="@id/earnings" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</me.lyft.android.ui.driver.carpool.DriverCarpoolRequestFooterView>

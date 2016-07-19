@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.onboarding.BecomeCarpoolDriverView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager android:id="@id/become_carpool_driver_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/span8" android:layout_marginTop="@dimen/span28" android:layout_marginRight="@dimen/span8" android:layout_weight="1.0" />
+    <com.lyft.widgets.PagingIndicator android:gravity="center" android:orientation="horizontal" android:id="@id/paging_indicator_view" android:layout_width="fill_parent" android:layout_height="@dimen/span16" android:layout_marginBottom="@dimen/span20" />
+    <Button android:id="@id/become_carpool_driver_button" android:background="@drawable/btn_pink_rounded" android:layout_margin="@dimen/span8" android:text="@string/become_carpool_driver_onboarding_button_label" style="@style/FullBleedButtonV2" />
+</me.lyft.android.ui.onboarding.BecomeCarpoolDriverView>

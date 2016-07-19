@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/auto_navigation_toggle_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_marginTop="@dimen/span40" style="@style/Splitter" />
+        <FrameLayout android:paddingRight="@dimen/span8" android:layout_width="fill_parent" android:layout_height="@dimen/span72">
+            <TextView android:gravity="center_vertical" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_navigation" style="@style/CellButton" />
+            <com.lyft.widgets.Toggle android:layout_gravity="center|right" android:id="@id/auto_navigation_toggle" android:layout_width="@dimen/span48" android:layout_height="@dimen/span36" />
+        </FrameLayout>
+        <View android:layout_marginLeft="@dimen/span16" style="@style/Splitter" />
+        <TextView android:textStyle="italic" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="@dimen/span16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_nav_opt_out_settings_subtitle" style="@style/TertiaryText" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/span40" style="@style/Splitter" />
+    <FrameLayout android:paddingRight="@dimen/span8" android:layout_width="fill_parent" android:layout_height="@dimen/span72">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_switch_back" style="@style/CellButton" />
+        <com.lyft.widgets.Toggle android:layout_gravity="center|right" android:id="@id/auto_switch_back_toggle" android:layout_width="@dimen/span48" android:layout_height="@dimen/span36" />
+    </FrameLayout>
+    <View android:layout_marginLeft="@dimen/span16" style="@style/Splitter" />
+    <TextView android:textStyle="italic" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="@dimen/span16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_switch_back_opt_out_settings_subtitle" style="@style/TertiaryText" />
+</LinearLayout>

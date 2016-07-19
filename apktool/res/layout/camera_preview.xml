@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lyft.widgets.PreviewFrameLayout android:id="@id/preview_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lyft.widgets.PreviewSurfaceView android:id="@id/preview_surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.lyft.widgets.PreviewFrameLayout>

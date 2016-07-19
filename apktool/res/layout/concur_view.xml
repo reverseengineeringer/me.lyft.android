@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/span64" style="@style/CellButton">
+        <ImageView android:id="@id/icon_image_view" android:layout_width="@dimen/span24" android:layout_height="wrap_content" android:src="@drawable/ic_concur_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/concur" android:paddingLeft="18.0dip" android:text="@string/payment_concur_title" style="@style/PrimaryText" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:gravity="right" android:id="@id/send_to_concur" style="@style/SecondaryText" />
+    </LinearLayout>
+</merge>

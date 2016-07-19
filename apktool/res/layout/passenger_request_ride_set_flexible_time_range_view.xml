@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.request.time.SetFlexibleTimeRangeView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/back_button" android:background="@drawable/circular_map_button" android:layout_marginLeft="@dimen/span6" android:src="@drawable/ic_back_arrow" android:layout_above="@id/container_bottom" style="@style/PassengerMapButton" />
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_bottom" android:padding="@dimen/span6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span6">
+            <TextView android:textSize="20.0sp" android:textColor="@color/charcoal" android:gravity="center" android:background="@drawable/bg_grey_rounded_top_corners" android:paddingTop="@dimen/span12" android:paddingBottom="@dimen/span2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/request_ride_set_time_carpool_title" style="@style/HeaderText" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/charcoal" android:gravity="center" android:background="@color/bone" android:paddingBottom="@dimen/span12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/request_ride_set_time_carpool_subtitle" style="@style/LabelText" />
+            <View style="@style/HorizontalDialogDivider" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <me.lyft.android.controls.CustomPicker android:id="@id/time_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_centerInParent="true" android:overScrollMode="never" />
+                <TextView android:id="@id/pickup_at_label" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/pickup_time_selector_label" android:layout_centerVertical="true" style="@style/SecondaryText" />
+                <TextView android:id="@id/date_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SecondaryText" />
+                <View android:layout_marginTop="50.0dip" style="@style/HorizontalDialogDivider" />
+                <View android:layout_marginTop="100.0dip" style="@style/HorizontalDialogDivider" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:enabled="false" android:id="@id/set_time_button" android:background="@drawable/btn_gradient_purple_rounded" style="@style/FullBleedButtonV2" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading_times_progressbar" android:padding="@dimen/span12" android:layout_width="wrap_content" android:layout_height="@dimen/full_bleed_button_height_v2" style="@style/LoadingProgressBar" />
+        </FrameLayout>
+    </me.lyft.android.ui.HeightObservableLayout>
+</me.lyft.android.ui.passenger.v2.request.time.SetFlexibleTimeRangeView>

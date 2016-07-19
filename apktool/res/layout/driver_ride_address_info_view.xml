@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/address_view" android:background="@drawable/selectable_item" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/address_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/pin_dropoff" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/big_text_2" android:ellipsize="end" android:id="@id/ride_in_progress_address_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/PrimaryText" />
+            <TextView android:id="@id/tap_to_edit_address" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_edit" android:layout_below="@id/ride_in_progress_address_text_view" style="@style/SecondaryText" />
+            <TextView android:textSize="@dimen/big_text_1" android:id="@id/scheduled_pickup_time_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/driver_pickup_info_scheduled_format" android:maxLines="1" android:layout_below="@id/ride_in_progress_address_text_view" style="@style/PrimaryText" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@drawable/vertical_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/navigate_button" android:background="@drawable/selectable_item" android:layout_width="100.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_navigation_large" android:scaleType="centerInside" />
+        <TextView android:id="@id/eta_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navigation_ride_eta_default" style="@style/PrimaryText" />
+    </LinearLayout>
+</merge>

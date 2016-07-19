@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pickup_address_layout" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="@dimen/span60" android:layout_marginBottom="@dimen/span6">
+        <View android:id="@id/pickup_address_field_tap_area" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <me.lyft.android.ui.passenger.v2.request.ScheduleRideButton android:layout_gravity="right" android:id="@id/schedule_ride_button_container" android:background="@drawable/selectable_item_translucent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/span60" android:layout_height="@dimen/span60" />
+        <ImageButton android:id="@id/blue_dot_image" android:background="@drawable/selectable_item_translucent_rounded" android:layout_width="@dimen/span60" android:layout_height="@dimen/span60" android:src="@drawable/collapse_panel" />
+        <ImageView android:id="@id/mulberry_dot_image" android:padding="@dimen/span24" android:visibility="gone" android:layout_width="@dimen/span60" android:layout_height="@dimen/span60" android:src="@drawable/mulberry_dot" />
+        <ProgressBar android:id="@id/loading_progress_indicator" android:padding="@dimen/span12" android:layout_width="@dimen/span60" android:layout_height="@dimen/span60" style="@style/LoadingProgressBar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/pickup_address_container" android:background="@drawable/selectable_item_translucent_rounded" android:paddingLeft="@dimen/span68" android:paddingRight="@dimen/span8" android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/pickup_address_field" android:layout_width="fill_parent" android:singleLine="true" style="@style/PrimaryText" />
+            <TextView android:textSize="@dimen/xsmall_text" android:textColor="@color/dove" android:id="@id/pickup_address_field_label" android:layout_width="fill_parent" android:text="Pickup Location" android:singleLine="true" style="@style/SecondaryText" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/ride_type_selector_layout" android:padding="2.0dip" android:visibility="invisible" android:layout_width="@dimen/span60" android:layout_height="@dimen/span60" android:layout_marginBottom="@dimen/span6">
+        <TextView android:textSize="@dimen/xsmall_text" android:textColor="@color/mulberry" android:ellipsize="none" android:gravity="center" android:id="@id/ride_type_selector_label" android:background="@drawable/white_circle" android:paddingTop="@dimen/span24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/ride_type_selector_icon" android:paddingBottom="@dimen/span12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

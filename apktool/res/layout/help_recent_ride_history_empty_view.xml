@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/small_text" android:textColor="@color/stone" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/help_recent_ride_history_empty_view" android:padding="@dimen/span16" android:layout_width="fill_parent" android:layout_height="78.0dip" android:text="@string/help_ride_history_empty_list_title" android:lines="2" android:drawableLeft="@drawable/ic_history" android:drawablePadding="@dimen/span16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

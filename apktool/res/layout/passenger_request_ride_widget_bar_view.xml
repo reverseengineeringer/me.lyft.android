@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.request.widgets.WidgetContainer android:orientation="vertical" android:background="@drawable/passenger_request_ride_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/red_1" android:gravity="center" android:id="@id/widget_error_state_label" android:background="@drawable/selectable_item_translucent" android:paddingLeft="@dimen/span8" android:paddingRight="@dimen/span8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/span52" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/payment_layout" android:layout_width="fill_parent" android:layout_height="@dimen/span52" android:divider="@drawable/vertical_divider" android:showDividers="middle" android:dividerPadding="@dimen/span12">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/payment_widget" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/cc_logo" android:layout_width="wrap_content" android:layout_height="@dimen/span20" />
+                <TextView android:textSize="@dimen/text_16" android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/cc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/span100" android:singleLine="true" />
+                <ImageView android:id="@id/cc_concur_logo" android:paddingLeft="@dimen/span8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/span20" android:src="@drawable/ic_concur_logo_small" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:id="@id/payment_widget_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/prime_time_widget" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/charcoal" android:id="@id/prime_time_amount_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_pt_charcoal" android:drawablePadding="@dimen/span4" />
+            <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passenger_request_ride_prime_time_widget_label" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fixed_fare_widget_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fixed_fare_widget" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_16" android:textColor="@color/charcoal" android:id="@id/fix_fare_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:id="@id/fixed_fare_comparison_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/fixed_fare_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Widget.Holo.ProgressBar" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/selectable_item_translucent" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/span100" android:singleLine="true" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/price_estimate_widget" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ProgressBar android:gravity="center" android:id="@id/price_estimate_loading" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/LoadingProgressBar" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/price_estimate_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_16" android:textStyle="bold" android:textColor="@color/charcoal" android:id="@id/price_estimate_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/price_estimate_label_placeholder" android:layout_width="wrap_content" android:layout_height="@dimen/span20" android:src="@drawable/ic_card_dollar_sign" />
+                <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/span100" android:text="@string/passenger_request_ride_price_estimate_widget_label" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/business_profile_divider" android:background="@drawable/horizontal_divider" style="@style/HorizontalDialogDivider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/business_payment_method_selection_widget" android:layout_width="fill_parent" android:layout_height="@dimen/span52" android:divider="@drawable/vertical_divider" android:showDividers="middle" android:dividerPadding="@dimen/span12">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/business_profile_widget" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/business_profile_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/business_profile_label" android:paddingLeft="@dimen/span8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/span120" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/business_payment_widget" android:background="@drawable/selectable_item_translucent" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/business_cc_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/business_cc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/span120" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</me.lyft.android.ui.passenger.v2.request.widgets.WidgetContainer>

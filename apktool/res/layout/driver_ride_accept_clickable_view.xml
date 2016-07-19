@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lyft.widgets.CircularRevealLayout android:gravity="center_horizontal" android:id="@id/driver_ride_accept_clickable_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/span400">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/driver_accept_delayed_root" android:paddingBottom="@dimen/span78" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/big_text_5" android:gravity="center" android:id="@id/ride_type_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <me.lyft.android.ui.driver.DriverRideAcceptEtaView android:id="@id/driver_ride_accept_eta_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ride_type_text_view" />
+            <me.lyft.android.ui.driver.DriverRideAcceptProfileView android:id="@id/driver_ride_accept_profile_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/driver_ride_accept_eta_view" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/big_text_3" android:textColor="@color/charcoal_2" android:gravity="center" android:id="@id/passenger_name_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/driver_ride_accept_profile_view" android:layout_centerHorizontal="true" />
+            <me.lyft.android.ui.driver.DriverRideAcceptRatingView android:gravity="center" android:orientation="horizontal" android:id="@id/driver_ride_accept_rating_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/passenger_name_text_view" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/big_text_1" android:gravity="center_horizontal" android:id="@id/accept_tap_text_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span64" android:text="@string/driver_ride_tap_accept" android:layout_alignParentBottom="true" />
+    </com.lyft.widgets.CircularRevealLayout>
+</merge>

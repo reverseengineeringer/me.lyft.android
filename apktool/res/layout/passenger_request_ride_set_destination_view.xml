@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.request.destination.SetDestinationView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pin_destination_map" android:layout_above="@id/container_bottom" android:layout_below="@id/container_top" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <include android:id="@id/warning_fragment_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" android:layout_below="@id/container_top" android:layout_centerHorizontal="true" layout="@layout/warning" />
+    <ImageButton android:id="@id/back_button" android:background="@drawable/circular_map_button" android:layout_marginLeft="@dimen/span8" android:src="@drawable/ic_back_arrow" android:layout_above="@id/container_bottom" android:layout_alignParentLeft="true" style="@style/PassengerMapButton" />
+    <ImageButton android:id="@id/center_to_current_location_button" android:background="@drawable/circular_map_button" android:layout_marginRight="@dimen/span8" android:src="@drawable/btn_map_icon_selector" android:layout_above="@id/container_bottom" android:layout_alignParentRight="true" style="@style/PassengerMapButton" />
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_bottom" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span8">
+            <include layout="@layout/passenger_request_ride_ride_type_info_header_view" />
+            <View android:background="@drawable/horizontal_divider" style="@style/HorizontalDialogDivider" />
+            <include layout="@layout/passenger_request_ride_widget_bar_view" />
+            <View android:background="@drawable/horizontal_divider" style="@style/HorizontalDialogDivider" />
+            <include layout="@layout/passenger_request_ride_pickup_and_destination_address_view" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/set_destination_button" android:background="@drawable/btn_gradient_purple_rounded" android:text="@string/set_destination_button" style="@style/FullBleedButtonV2" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/button_progressbar" android:padding="@dimen/span12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/confirm_ride_progressbar_height" style="@style/LoadingProgressBar" />
+        </FrameLayout>
+    </me.lyft.android.ui.HeightObservableLayout>
+</me.lyft.android.ui.passenger.v2.request.destination.SetDestinationView>

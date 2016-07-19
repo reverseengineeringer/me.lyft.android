@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="com_appboy_push_small_notification_icon">@drawable/ic_stat_notify</item>
+</resources>

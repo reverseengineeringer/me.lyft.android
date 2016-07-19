@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/span8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/passenger_ride_history_item" />
+            <include layout="@layout/help_recent_ride_history_loading_view" />
+            <include layout="@layout/help_recent_ride_history_empty_view" />
+            <View android:id="@id/recent_ride_history_splitter" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <TextView android:id="@id/ride_history_help" android:padding="@dimen/span8" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16" style="@style/TertiaryText" />
+            <View android:id="@id/ride_history_help_splitter" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <Button android:id="@id/faq_section_button" android:text="@string/help_faq_section" style="@style/HelpCellButton" />
+            <Button android:id="@id/driver_training_button" android:visibility="gone" android:text="@string/settings_training_ride_label" style="@style/HelpCellButton" />
+            <Button android:id="@id/roadside_assistance_section_button" android:text="@string/roadside_assistance_section" style="@style/HelpCellButton" />
+            <Button android:id="@id/legal_section_button" android:text="@string/help_legal_section" style="@style/HelpCellButton" />
+            <Button android:id="@id/jobs_section_button" android:text="@string/help_jobs_section" style="@style/HelpCellButton" />
+            <View android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <LinearLayout android:orientation="vertical" android:id="@id/app_version_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/span48" android:soundEffectsEnabled="false">
+                <TextView android:layout_marginLeft="@dimen/span16" android:layout_marginTop="@dimen/span8" android:text="@string/help_app_version" style="@style/HeaderText" />
+                <TextView android:id="@id/app_version_txt" android:layout_marginLeft="@dimen/span16" android:layout_marginBottom="@dimen/span8" style="@style/TertiaryText" />
+            </LinearLayout>
+            <TextView android:id="@id/developer_mode_title" android:padding="@dimen/span16" android:layout_width="fill_parent" android:layout_height="@dimen/span56" android:soundEffectsEnabled="false" style="@style/TertiaryText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

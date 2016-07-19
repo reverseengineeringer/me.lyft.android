@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.ui.driver.expresspay.DriverEarningsExpressPayWidget android:id="@id/express_pay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <me.lyft.android.ui.driver.achievements.DriverEarningsRecentActivitiesWidget android:id="@id/recent_activities" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/achievements_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

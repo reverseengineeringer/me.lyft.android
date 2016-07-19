@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:background="@drawable/selectable_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/social_sharing_dialog_new_button_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/slate" android:id="@id/social_sharing_dialog_new_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span6" android:layout_marginBottom="@dimen/span20" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.onboarding.AddProfilePhotoView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.onboarding.CarpoolDriverOnboardingToolbarView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/span40" android:paddingRight="@dimen/span40" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/big_text_3" android:textStyle="bold" android:textColor="@color/charcoal_2" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/add_profile_photo_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span28" android:text="@string/carpool_onboarding_add_profile_photo_title" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span36" android:src="@drawable/graphic_default_silhouette_circle" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/add_profile_photo_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span36" android:text="@string/carpool_onboarding_add_profile_photo_message" style="@style/PrimaryText" />
+    </LinearLayout>
+    <Button android:id="@id/add_profile_photo_button" android:background="@drawable/btn_pink_rounded" android:layout_margin="@dimen/span8" android:text="@string/carpool_onboarding_add_profile_photo_button" style="@style/FullBleedButtonV2" />
+</me.lyft.android.ui.onboarding.AddProfilePhotoView>

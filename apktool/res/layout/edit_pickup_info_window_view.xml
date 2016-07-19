@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tooltip_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span24" android:layout_marginBottom="@dimen/span48">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/title_text_view" android:background="#e6474c62" android:padding="@dimen/span8" android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="@string/adjust_location_tooltip" android:includeFontPadding="false" android:drawableRight="@drawable/ic_back_small" android:drawablePadding="@dimen/span8" />
+        <View android:background="@drawable/map_info_window_botton_triangle" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+    </LinearLayout>
+</merge>

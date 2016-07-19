@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_view_container" android:paddingBottom="@dimen/span18" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_content_title" android:layout="@layout/standard_dialog_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DialogTitle" />
+    <ViewStub android:id="@id/stub_content_image" android:layout="@layout/standard_dialog_content_image" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DialogContentGraphic" />
+    <ViewStub android:id="@id/stub_content_message" android:layout="@layout/standard_dialog_content_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DialogMessage" />
+    <ViewStub android:id="@id/stub_content_footer" android:layout="@layout/standard_dialog_content_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DialogFooter" />
+</LinearLayout>

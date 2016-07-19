@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:gravity="center" android:orientation="vertical" android:id="@id/top_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <me.lyft.android.controls.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <me.lyft.android.ui.HeightObservableLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/carpool_passenger_view" />
+        <Button android:id="@id/navigate_button" android:background="@drawable/btn_gradient_purple" android:text="@string/carpool_dropoff_button" style="@style/FullBleedButton" />
+    </me.lyft.android.ui.HeightObservableLayout>
+</LinearLayout>

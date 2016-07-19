@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.request.venue.VenueRideView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <me.lyft.android.ui.passenger.v2.request.pickup.PickupEtaPin android:layout_gravity="center" android:id="@id/pickup_eta_pin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/container_bottom" android:layout_below="@id/container_top" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/back_button" android:background="@drawable/circular_map_button" android:layout_marginLeft="@dimen/span6" android:src="@drawable/ic_back_arrow" android:layout_above="@id/container_bottom" android:layout_alignParentLeft="true" style="@style/PassengerMapButton" />
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/container_bottom" android:padding="@dimen/span6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span6">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="@color/charcoal" android:gravity="center" android:id="@id/pickup_title_text_view" android:background="@drawable/bg_grey_rounded_top_corners" android:paddingTop="@dimen/span12" android:paddingBottom="@dimen/span2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/HeaderText" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/charcoal" android:gravity="center" android:id="@id/pickup_subtitle_text_view" android:background="@color/bone" android:paddingBottom="@dimen/span12" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LabelText" />
+                <View style="@style/HorizontalDialogDivider" />
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/single_location_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/span60" android:layout_marginLeft="@dimen/span28" android:maxLines="1" android:drawableLeft="@drawable/ic_dot_fill_mulberry" android:drawablePadding="@dimen/span28" style="@style/PrimaryText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pickers_layout" android:layout_width="fill_parent" android:layout_height="@dimen/span120" android:weightSum="2.0">
+                <me.lyft.android.controls.CustomPicker android:layout_gravity="bottom" android:id="@id/venue_picker" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" custom:itemTextSize="@dimen/picker_text" />
+                <me.lyft.android.controls.CustomPicker android:layout_gravity="bottom" android:id="@id/location_picker" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" custom:itemTextSize="@dimen/picker_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/confirm_location_button" android:background="@drawable/btn_mulberry_rounded" android:text="@string/confirm_venue_location" style="@style/FullBleedButtonV2" />
+    </me.lyft.android.ui.HeightObservableLayout>
+</me.lyft.android.ui.passenger.v2.request.venue.VenueRideView>

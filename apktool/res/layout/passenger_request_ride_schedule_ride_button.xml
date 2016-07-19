@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="start|center" android:id="@id/pickup_timer_separator" android:background="@color/moon" android:layout_height="fill_parent" android:layout_marginTop="@dimen/span12" android:layout_marginBottom="@dimen/span12" style="@style/VerticalDialogButtonDivider" />
+    <ImageView android:layout_gravity="center" android:id="@id/pickup_timer_icon" android:visibility="visible" android:layout_width="@dimen/span52" android:layout_height="@dimen/span52" android:src="@drawable/icn_clock_purple" android:scaleType="center" />
+</merge>

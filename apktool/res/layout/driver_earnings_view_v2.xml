@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.DriverToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/news_feed_header_height" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span56" android:layout_marginBottom="@dimen/span68" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.ui.driver.expresspay.DriverEarningsExpressPayWidget android:id="@id/express_pay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <me.lyft.android.ui.driver.achievements.DriverEarningsRecentActivitiesWidget android:id="@id/recent_activities" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/achievements_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <me.lyft.android.controls.DriverBottomNavigationView android:layout_gravity="bottom" android:id="@id/driver_bottom_navigation_view" android:background="@color/bone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

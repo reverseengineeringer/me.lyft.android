@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.makeramen.roundedimageview.RoundedImageView android:background="@drawable/profile_placeholder" android:layout_width="@dimen/span32" android:layout_height="@dimen/span32" android:layout_marginLeft="-8.0dip" app:riv_border_width="@dimen/span2" app:riv_border_color="@color/dove" app:riv_oval="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.pending.MatchingPlaceholderRideTypeView android:gravity="center" android:orientation="horizontal" android:id="@id/matching_ride_type_info" android:background="@drawable/passenger_request_ride_widget_background" android:padding="@dimen/span6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ride_type_info_header_view" />
+</me.lyft.android.ui.passenger.v2.pending.MatchingPlaceholderRideTypeView>

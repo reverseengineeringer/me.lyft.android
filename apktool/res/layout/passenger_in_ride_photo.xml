@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@id/round_image_view" android:layout_width="@dimen/span64" android:layout_height="@dimen/span64" android:src="@drawable/passenger_details_default_photo" android:scaleType="centerCrop" app:riv_border_width="@dimen/span2" app:riv_border_color="@color/dove" app:riv_oval="true" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/number_text_view" android:background="@drawable/dove_circle" android:layout_width="@dimen/span20" android:layout_height="@dimen/span20" android:layout_marginLeft="@dimen/span44" android:text="2" android:maxLength="1" android:layout_alignBottom="@id/round_image_view" />
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/label_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span2" android:maxWidth="@dimen/span68" android:text="Kyle" android:singleLine="true" android:layout_below="@id/round_image_view" android:layout_centerInParent="true" />
+</RelativeLayout>

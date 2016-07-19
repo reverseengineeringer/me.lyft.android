@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:gravity="center" android:orientation="vertical" android:id="@id/top_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <me.lyft.android.controls.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <me.lyft.android.ui.HeightObservableLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/carpool_passenger_view" />
+        <TextView android:textSize="@dimen/micro_text" android:id="@id/start_driving_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span20" android:text="@string/carpool_start_driving_label" style="@style/CarpoolPrimaryText" />
+        <TextView android:textSize="@dimen/big_text_3" android:id="@id/countdown_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span20" style="@style/CarpoolPrimaryText" />
+        <Button android:id="@id/start_ride_button" android:background="@drawable/btn_gradient_dark_blue" android:text="@string/carpool_preview_route_button" style="@style/FullBleedButton" />
+    </me.lyft.android.ui.HeightObservableLayout>
+</LinearLayout>

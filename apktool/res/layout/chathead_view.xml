@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.shortcut.ChatheadView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chathead" android:padding="@dimen/span8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chathead" />
+    <FrameLayout android:id="@id/chathead_extra_content" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span8" android:src="@drawable/lyft_chathead_adjusted" />
+        <TextView android:textStyle="bold" android:textColor="@color/hot_pink" android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/prime_time_text_view" android:background="@drawable/bg_shortcut_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_primetime_pink" android:drawablePadding="@dimen/span4" />
+        <ImageView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/driver_icon_view" android:background="@drawable/bg_shortcut_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drive_small_pink" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    </FrameLayout>
+</me.lyft.android.ui.driver.shortcut.ChatheadView>

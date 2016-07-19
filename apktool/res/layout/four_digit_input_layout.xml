@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.KeyboardlessEditText android:textSize="36.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/hidden_edit_text" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" android:maxLength="4" android:inputType="number" style="@style/EditText" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/four_input_digit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16">
+        <TextView android:textSize="36.0sp" android:gravity="center" android:id="@id/input_digit1" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span5" style="@style/EditText" />
+        <TextView android:textSize="36.0sp" android:gravity="center" android:id="@id/input_digit2" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span5" android:layout_marginRight="@dimen/span5" style="@style/EditText" />
+        <TextView android:textSize="36.0sp" android:gravity="center" android:id="@id/input_digit3" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span5" android:layout_marginRight="@dimen/span5" style="@style/EditText" />
+        <TextView android:textSize="36.0sp" android:gravity="center" android:id="@id/input_digit4" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span5" style="@style/EditText" />
+    </LinearLayout>
+</FrameLayout>

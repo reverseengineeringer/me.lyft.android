@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tab_view" android:background="@drawable/selectable_item_top_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/tab_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span4" />
+        <TextView android:textSize="@dimen/micro_text" android:textColor="@color/dove" android:id="@id/tab_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span8" android:text="@string/home_tab" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="@color/grey_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/passenger_ride_top" android:background="@drawable/actionbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <me.lyft.android.controls.MenuButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:id="@id/invite_referral_code_selector" android:background="@drawable/selectable_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <TextView android:textSize="@dimen/normal_text" android:textColor="@color/charcoal_2" android:ellipsize="end" android:gravity="center" android:id="@id/invite_your_code" android:paddingRight="@dimen/span8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_your_code" android:maxLines="2" android:includeFontPadding="false" android:drawablePadding="8.0dip" />
+            <TextView android:textSize="@dimen/normal_text" android:textStyle="bold" android:textColor="@color/charcoal_2" android:ellipsize="end" android:gravity="center" android:id="@id/invite_personal_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:drawablePadding="8.0dip" />
+        </LinearLayout>
+        <View android:background="@color/stone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/driver_bottom_navigation_view" android:layout_below="@id/passenger_ride_top">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/invite_card_view_top" layout="@layout/invite_card" />
+            <include android:id="@id/invite_card_view_bottom" layout="@layout/invite_card" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/xsmall_text" android:textColorLink="@color/grey_4" android:ellipsize="end" android:id="@id/invite_terms_and_conditions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span16" android:text="@string/view_terms_of_service" android:maxLines="2" android:includeFontPadding="false" android:drawablePadding="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

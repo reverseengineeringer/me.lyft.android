@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ride_features_divider" style="@style/HorizontalDialogDivider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.lyft.android.ui.passenger.v2.inride.InRideActionItem android:gravity="center" android:orientation="vertical" android:id="@id/contact_driver_button" android:background="@drawable/selectable_item_translucent_rounded_bottom_left" android:paddingTop="@dimen/span8" android:paddingBottom="@dimen/span8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <me.lyft.android.ui.passenger.v2.inride.InRideActionItem android:gravity="center" android:orientation="vertical" android:id="@id/split_fare_button" android:background="@drawable/selectable_item_translucent" android:paddingTop="@dimen/span8" android:paddingBottom="@dimen/span8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <me.lyft.android.ui.passenger.v2.inride.InRideActionItem android:gravity="center" android:orientation="vertical" android:id="@id/share_route_button" android:background="@drawable/selectable_item_translucent" android:paddingTop="@dimen/span8" android:paddingBottom="@dimen/span8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <me.lyft.android.ui.passenger.v2.inride.InRideActionItem android:gravity="center" android:orientation="vertical" android:id="@id/cancel_ride_button" android:background="@drawable/selectable_item_translucent_rounded_bottom_right" android:paddingTop="@dimen/span8" android:paddingBottom="@dimen/span8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

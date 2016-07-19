@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.inride.PassengersDetailView android:id="@id/passenger_details" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/dove" android:layout_width="fill_parent" android:layout_height="@dimen/span2" android:layout_marginLeft="@dimen/span12" android:layout_marginTop="38.0dip" android:layout_marginRight="@dimen/span12" android:layout_alignLeft="@id/passengers_container_view" android:layout_alignRight="@id/passengers_container_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/passengers_container_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/vertical_divider_transparent" android:layout_centerInParent="true" android:showDividers="middle" />
+</me.lyft.android.ui.passenger.v2.inride.PassengersDetailView>

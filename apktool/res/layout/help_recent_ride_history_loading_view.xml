@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/help_recent_ride_history_loading_view" android:padding="@dimen/span16" android:layout_width="fill_parent" android:layout_height="78.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ride_history_rounded_placeholder" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/span16" android:paddingRight="@dimen/span16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/grey_6" android:layout_width="@dimen/span154" android:layout_height="@dimen/span12" android:layout_marginBottom="@dimen/span6" />
+        <View android:background="@color/grey_6" android:layout_width="@dimen/span96" android:layout_height="@dimen/span12" android:layout_marginTop="@dimen/span6" />
+    </LinearLayout>
+</LinearLayout>

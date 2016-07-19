@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/dove"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:left="0.5dip" android:top="0.5dip" android:right="0.5dip" android:bottom="0.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/request_button_corner_radius" />
+            <solid android:color="@color/dove" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/request_button_corner_radius" />
+                    <stroke android:width="0.5dip" android:color="@color/dove" />
+                    <solid android:color="@color/bone" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/static_frame_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.lyft.widgets.TextureVideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="top" android:background="@drawable/intro_gradient_top" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+    <View android:layout_gravity="bottom" android:background="@drawable/intro_gradient_bottom" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+</merge>

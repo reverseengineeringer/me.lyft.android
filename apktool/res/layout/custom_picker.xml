@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/normal_text" android:textColor="@color/charcoal_1" android:ellipsize="end" android:gravity="center" android:id="@id/picker_input" android:layout_width="@dimen/span200" android:layout_height="wrap_content" android:singleLine="true" />
+</merge>

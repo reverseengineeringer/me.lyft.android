@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.4" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:layout_marginTop="0.0dip" android:src="@drawable/ic_user_identity" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/small_text" android:textStyle="italic" android:gravity="center" android:layout_gravity="center" android:id="@id/challenge_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span60" android:layout_marginTop="@dimen/span16" android:layout_marginRight="@dimen/span60" android:text="@string/login_challenge_credit_card_title" style="@style/PrimaryText" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16">
+                <ImageView android:id="@id/challenge_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_payment" />
+                <TextView android:textColor="@color/dove" android:paddingLeft="@dimen/span32" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/login_challenge_credit_card_hint" style="@style/EditText" />
+                <me.lyft.android.controls.KeyboardlessEditText android:id="@id/challenge_field" android:paddingLeft="@dimen/span120" android:singleLine="true" android:inputType="textCapCharacters" style="@style/EditText" />
+            </FrameLayout>
+            <TextView android:gravity="center" android:id="@id/inline_error_txt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" android:layout_marginTop="@dimen/span8" android:layout_marginRight="@dimen/span16" style="@style/InlineErrorText" />
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.6" />
+        </LinearLayout>
+    </ScrollView>
+    <me.lyft.android.controls.NumericKeyboard android:id="@id/keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span8" />
+    <Button android:id="@id/next_button" android:text="@string/next_button" style="@style/PinkFullBleedButton" />
+</LinearLayout>

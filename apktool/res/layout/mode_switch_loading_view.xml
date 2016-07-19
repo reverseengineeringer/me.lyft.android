@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/big_text_2" android:textColor="@color/purple" android:id="@id/mode_switch_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span8" android:text="@string/placeholder_matching_screen_header" android:layout_centerInParent="true" />
+    <View android:id="@id/mode_switch_loading_progress_bar" android:background="@drawable/progressbar" android:layout_width="fill_parent" android:layout_height="@dimen/span4" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" android:layout_below="@id/mode_switch_text_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

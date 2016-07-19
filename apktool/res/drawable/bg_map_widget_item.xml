@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/bg_map_widget_corners" />
+                    <solid android:color="@color/map_widget_drop_shadow_color" />
+                    <padding android:left="@dimen/bg_map_widget_shadow_width" android:top="@dimen/bg_map_widget_shadow_width" android:right="@dimen/bg_map_widget_shadow_width" android:bottom="@dimen/bg_map_widget_shadow_width" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/bone" />
+                    <corners android:radius="@dimen/bg_map_widget_corners" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/bg_map_widget_corners" />
+                    <solid android:color="@color/map_widget_drop_shadow_color" />
+                    <padding android:left="@dimen/bg_map_widget_shadow_width" android:top="@dimen/bg_map_widget_shadow_width" android:right="@dimen/bg_map_widget_shadow_width" android:bottom="@dimen/bg_map_widget_shadow_width" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/bone" />
+                    <corners android:radius="@dimen/bg_map_widget_corners" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/bg_map_widget_corners" />
+                    <solid android:color="@color/map_widget_drop_shadow_color" />
+                    <padding android:left="@dimen/bg_map_widget_shadow_width" android:top="@dimen/bg_map_widget_shadow_width" android:right="@dimen/bg_map_widget_shadow_width" android:bottom="@dimen/bg_map_widget_shadow_width" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/white" />
+                    <corners android:radius="@dimen/bg_map_widget_corners" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

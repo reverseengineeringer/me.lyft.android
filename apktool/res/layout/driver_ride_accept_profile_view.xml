@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/profile_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/driver_ride_accept_eta_view" android:layout_centerHorizontal="true">
+        <me.lyft.android.ui.UserImageView android:id="@id/passenger_profile_image_view" android:background="@color/transparent" android:layout_width="@dimen/span120" android:layout_height="@dimen/span120" android:layout_centerInParent="true" />
+        <com.lyft.widgets.CircularProgressView android:id="@id/progress_bar" android:layout_width="@dimen/span154" android:layout_height="@dimen/span154" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

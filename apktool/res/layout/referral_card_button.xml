@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/hot_pink" android:gravity="center" android:id="@id/view_all_button" android:background="@drawable/btn_transparent_hollow_rounded" android:paddingTop="@dimen/span8" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/span6" android:text="@string/view_all_referrals" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+</merge>

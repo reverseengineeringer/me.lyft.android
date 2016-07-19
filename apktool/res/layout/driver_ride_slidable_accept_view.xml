@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <me.lyft.android.ui.driver.DriverRideAcceptBannerView android:gravity="center" android:orientation="horizontal" android:id="@id/driver_ride_accept_banner_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <me.lyft.android.ui.driver.DriverRideAcceptClickableView android:gravity="center_horizontal" android:id="@id/driver_ride_accept_clickable_view" android:layout_width="fill_parent" android:layout_height="@dimen/span400" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/foreground" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/content_container" android:layout_alignBottom="@id/content_container" />
+</merge>

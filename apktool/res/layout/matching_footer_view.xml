@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/matching_message_text_view" android:background="@drawable/bg_grey_rounded_top_corners" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/PassengerFooterBanner" />
+    <RelativeLayout android:background="@color/bone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_centerVertical="true" style="@style/HorizontalDialogDivider" />
+        <me.lyft.android.ui.passenger.v2.pending.MatchingProgressBar android:id="@id/progress_bar" android:background="@drawable/progressbar" android:layout_width="fill_parent" android:layout_height="@dimen/span2" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/matching_placeholder_ride_type_view" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/real_time_matching_placeholder" android:background="@color/bone" android:layout_width="fill_parent" android:layout_height="@dimen/span84">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span40" android:src="@drawable/car_placeholder" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_placeholder" />
+    </LinearLayout>
+    <View style="@style/HorizontalDialogDivider" />
+    <me.lyft.android.ui.passenger.v2.PickupAndDestinationAddressView android:id="@id/pickup_destination_address_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View style="@style/HorizontalDialogDivider" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cancel_ride_button" android:background="@drawable/bg_white_rounded_bottom_corners" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_black" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_ride_button" />
+    </LinearLayout>
+</merge>

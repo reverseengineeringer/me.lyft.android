@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_list_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/span32" android:layout_marginRight="@dimen/span32"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_list_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_history_large_grey" />
+    <TextView android:textSize="@dimen/big_text_3" android:textColor="@color/black" android:id="@id/empty_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span24" android:text="@string/passenger_ride_history_empty_list_title" />
+    <TextView android:textSize="@dimen/normal_text" android:textColor="@color/black" android:gravity="center" android:id="@id/empty_list_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" android:text="@string/passenger_ride_history_empty_list_subtitle" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.MenuButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <me.lyft.android.ui.driver.ViewPagerTabLayout android:orientation="vertical" android:id="@id/tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tab_buttons_container" android:layout_width="fill_parent" android:layout_height="@dimen/span48">
+            <TextView android:id="@id/all_tab_view" android:text="@string/all" style="@style/RideHistoryTabTitle" />
+            <TextView android:id="@id/personal_tab_view" android:text="@string/personal" style="@style/RideHistoryTabTitle" />
+            <TextView android:id="@id/business_tab_view" android:text="@string/business" style="@style/RideHistoryTabTitle" />
+        </LinearLayout>
+        <View android:id="@id/selected_tab_indicator" android:background="@color/mulberry" android:layout_width="wrap_content" android:layout_height="2.0dip" />
+    </me.lyft.android.ui.driver.ViewPagerTabLayout>
+    <View android:background="@color/primary_text_disabled" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/ride_history_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

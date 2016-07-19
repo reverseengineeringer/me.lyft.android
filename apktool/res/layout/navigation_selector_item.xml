@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_icon" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16" />
+    <CheckedTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_text" android:background="@null" android:layout_width="fill_parent" android:checkMark="@drawable/invite_check_box" android:minHeight="48.0dip" android:singleLine="true" style="@style/CellButton" />
+</LinearLayout>

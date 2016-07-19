@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/global_terms_of_service_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/close_button" android:layout_width="@dimen/span48" android:layout_height="@dimen/span48" android:src="@drawable/ic_button_close_large" android:scaleType="centerInside" style="@style/CloseDialogButton" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/dove" android:gravity="center" android:id="@id/global_terms_of_service_link" android:padding="@dimen/span10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/global_terms_of_service_link" android:layout_weight="0.0" />
+        <com.lyft.widgets.ProgressButton android:layout_gravity="bottom|center" android:id="@id/global_terms_of_service_agree" android:background="@drawable/btn_pink_rounded" android:layout_margin="@dimen/span8" android:text="@string/global_terms_of_service_onboarding_agree" style="@style/FullBleedButtonV2" />
+    </LinearLayout>
+</FrameLayout>

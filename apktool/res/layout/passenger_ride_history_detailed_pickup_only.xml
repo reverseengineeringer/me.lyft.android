@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ride_history_pickup_only" android:padding="@dimen/span16" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pickup_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" android:src="@drawable/ic_pickup_dot" />
+        <TextView android:textSize="@dimen/normal_text" android:textStyle="bold" android:textColor="@color/black" android:id="@id/pickup_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" android:text="@string/passenger_ride_history_details_pickup_label" />
+        <TextView android:textSize="@dimen/normal_text" android:textColor="@color/stone" android:id="@id/ride_pickup_only_time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/normal_text" android:textColor="@color/black" android:ellipsize="marquee" android:id="@id/ride_pickup_only_address_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span40" android:singleLine="true" />
+</LinearLayout>

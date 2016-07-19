@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/big_text_1" android:layout_gravity="center" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" android:text="@string/driver_recent_activities" android:drawablePadding="@dimen/span8" />
+    <me.lyft.android.ui.driver.ViewPagerTabLayout android:orientation="vertical" android:id="@id/tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tab_buttons_container" android:layout_width="fill_parent" android:layout_height="@dimen/span48">
+            <TextView android:id="@id/daily_tab_button" android:text="@string/stats_label_daily" style="@style/DriverStatsTabTitle" />
+            <TextView android:id="@id/weekly_tab_button" android:text="@string/stats_label_weekly" style="@style/DriverStatsTabTitle" />
+        </LinearLayout>
+        <View android:id="@id/selected_tab_indicator" android:background="@color/hot_pink" android:layout_width="wrap_content" android:layout_height="2.0dip" />
+    </me.lyft.android.ui.driver.ViewPagerTabLayout>
+    <View android:background="@color/bone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.lyft.widgets.viewpager.HeightWrappingViewPager android:id="@id/stats_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textStyle="italic" android:gravity="center" android:id="@id/driver_stats_disclaimer" android:background="@color/bone" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+</merge>

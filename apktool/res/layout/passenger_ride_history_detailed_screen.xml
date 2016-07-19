@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/passenger_ride_history_retry_view" />
+    <ScrollView android:id="@id/content_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/passenger_ride_history_detailed_profile_item" />
+            <ImageView android:id="@id/route_map_image_view" android:background="@color/bone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" android:adjustViewBounds="true" />
+            <include layout="@layout/passenger_ride_history_detailed_route_breakdown_item" />
+            <include layout="@layout/passenger_ride_history_detailed_pickup_only" />
+            <LinearLayout android:orientation="vertical" android:id="@id/price_details_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span20" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end|middle|beginning">
+                <Button android:gravity="center" android:id="@id/tip_driver_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" android:text="@string/passenger_ride_history_tip_driver_button" style="@style/HelpCellButton" />
+                <Button android:gravity="center" android:id="@id/find_lost_item_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" android:text="@string/passenger_ride_history_find_lost_item_button" style="@style/HelpCellButton" />
+                <Button android:gravity="center" android:id="@id/request_review_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" android:text="@string/passenger_ride_history_request_review_button" style="@style/HelpCellButton" />
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/span32">
+                    <TextView android:textSize="@dimen/normal_text" android:textStyle="normal" android:textColor="@color/hot_pink" android:id="@id/pricing_faq_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passenger_ride_history_pricing_faq_label" />
+                    <TextView android:textSize="@dimen/normal_text" android:textStyle="normal" android:textColor="@color/hot_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" android:text="•" />
+                    <TextView android:textSize="@dimen/normal_text" android:textStyle="normal" android:textColor="@color/hot_pink" android:id="@id/help_center_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passenger_ride_history_help_center_label" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

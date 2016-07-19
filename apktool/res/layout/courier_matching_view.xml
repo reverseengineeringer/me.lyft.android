@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.passenger.v2.pending.CourierMatchingView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/passenger_ride_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+    </me.lyft.android.ui.HeightObservableLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/passenger_ride_bottom" android:layout_below="@id/passenger_ride_top">
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" layout="@layout/warning" />
+    </FrameLayout>
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/passenger_ride_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <me.lyft.android.ui.passenger.v2.pending.MatchingFooterView android:orientation="vertical" android:id="@id/matching_footer_view" android:background="@drawable/bg_map_widget_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/span8" />
+    </me.lyft.android.ui.HeightObservableLayout>
+</me.lyft.android.ui.passenger.v2.pending.CourierMatchingView>

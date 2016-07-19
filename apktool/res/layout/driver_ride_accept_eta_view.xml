@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ride_type_text_view">
+        <TextView android:textSize="@dimen/big_text_3" android:textColor="@color/charcoal_2" android:id="@id/ride_eta_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span4" />
+        <TextView android:textSize="@dimen/big_text_3" android:textColor="@color/charcoal_2" android:id="@id/ride_eta_away_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/driver_ride_destination_eta_away" />
+    </LinearLayout>
+</merge>

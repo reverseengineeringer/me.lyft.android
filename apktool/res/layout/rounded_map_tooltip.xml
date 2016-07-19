@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/top_triangle" android:background="@drawable/map_info_window_top_triangle" android:visibility="gone" android:layout_width="@dimen/span16" android:layout_height="@dimen/span16" />
+        <TextView android:textSize="@dimen/micro_text" android:textStyle="bold" android:textColor="@color/white" android:id="@id/title_text_view" android:background="@drawable/rounded_slate_alpha_90_background" android:paddingLeft="@dimen/span8" android:paddingTop="@dimen/span4" android:paddingRight="@dimen/span8" android:paddingBottom="@dimen/span4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <View android:id="@id/bottom_triangle" android:background="@drawable/map_info_window_botton_triangle" android:layout_width="@dimen/span16" android:layout_height="@dimen/span16" />
+    </LinearLayout>
+</merge>

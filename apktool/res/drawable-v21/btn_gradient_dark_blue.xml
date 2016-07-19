@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/dark_blue_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:drawable="@drawable/gradient_dark_blue" />
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/dark_blue_1" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

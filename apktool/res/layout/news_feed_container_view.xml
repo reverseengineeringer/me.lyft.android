@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/newsfeed_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8">
+        <android.support.v7.widget.RecyclerView android:id="@id/newsfeed_header_recycler_view" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/newsfeed_small_list_view" android:background="@color/grey_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

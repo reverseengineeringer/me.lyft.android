@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/driver_ride_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:layout_gravity="center_horizontal" android:id="@id/warning_fragment_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" layout="@layout/warning" />
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_alignParentTop="true" />
+            <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/driver_ride_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.ui.driver.DriverRideAcceptSlidableView android:gravity="bottom" android:id="@id/driver_ride_accept_slidable_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </me.lyft.android.ui.HeightObservableLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedScrollView android:id="@id/news_feed_scroll_view" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedView android:orientation="vertical" android:id="@id/newsfeed_container_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/driver_ride_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.controls.DriverToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/news_feed_header_height" />
+            <include android:id="@id/heatmap_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/span52" layout="@layout/heatmap_header" />
+        </me.lyft.android.ui.HeightObservableLayout>
+        <View android:id="@id/divider" android:background="@drawable/bg_top_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/span8" />
+        <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/follow_current_location_button" android:visibility="invisible" android:layout_marginRight="@dimen/span8" android:layout_marginBottom="@dimen/span12" android:src="@drawable/btn_map_icon_selector" style="@style/DriverMapButton" />
+</FrameLayout>

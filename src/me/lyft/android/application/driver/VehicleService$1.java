@@ -1,0 +1,33 @@
+package me.lyft.android.application.driver;
+
+import java.util.Iterator;
+import java.util.List;
+import me.lyft.android.common.Iterables;
+import me.lyft.android.domain.driver.Vehicle;
+import me.lyft.android.domain.driver.Vehicle.Status;
+import rx.functions.Func1;
+
+class VehicleService$1
+  implements Func1<List<Vehicle>, Vehicle>
+{
+  VehicleService$1(VehicleService paramVehicleService) {}
+  
+  public Vehicle call(List<Vehicle> paramList)
+  {
+    Iterator localIterator = paramList.iterator();
+    while (localIterator.hasNext())
+    {
+      Vehicle localVehicle = (Vehicle)localIterator.next();
+      if (Vehicle.Status.SELECTED.equals(localVehicle.getStatus())) {
+        return localVehicle;
+      }
+    }
+    return (Vehicle)Iterables.firstOrDefault(paramList, Vehicle.empty());
+  }
+}
+
+/* Location:
+ * Qualified Name:     me.lyft.android.application.driver.VehicleService.1
+ * Java Class Version: 6 (50.0)
+ * JD-Core Version:    0.7.1
+ */

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span8" />
+    <me.lyft.android.ui.driver.vehicles.VehicleStatusTextView android:textColor="@color/white" android:gravity="center" android:id="@id/vehicle_status_text_view" android:layout_width="fill_parent" android:layout_height="@dimen/span36" style="@style/PrimaryText" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/photo" android:layout_width="@dimen/span220" android:layout_height="@dimen/span100" android:layout_margin="@dimen/span16" android:src="@drawable/ic_car_silhouette" />
+            <View style="@style/SplitterMaterial" />
+            <LinearLayout style="@style/CarViewListItem">
+                <TextView android:text="@string/car_info_vehicle_title" style="@style/CarViewListItemText" />
+                <TextView android:textStyle="italic" android:gravity="center|right" android:id="@id/vehicle_text" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/CarViewListItemText" />
+            </LinearLayout>
+            <LinearLayout style="@style/CarViewListItem">
+                <TextView android:text="@string/car_info_license_plate_title" style="@style/CarViewListItemText" />
+                <TextView android:textStyle="italic" android:gravity="center|right" android:id="@id/license_plate_text" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/CarViewListItemText" />
+            </LinearLayout>
+            <View android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <LinearLayout android:id="@id/personal_insurance_view" style="@style/CarViewListItem">
+                <TextView android:text="@string/car_info_personal_insurance" style="@style/CarViewListItemText" />
+                <TextView android:textColor="@color/red_1" android:gravity="center|right" android:id="@id/personal_insurance_status_text" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/CarViewListItemText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/lyft_insurance_view" style="@style/CarViewListItem">
+                <TextView android:text="@string/car_info_lyft_insurance" style="@style/CarViewListItemText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/vehicle_inspection_view" style="@style/CarViewListItem">
+                <TextView android:text="@string/car_info_vehicle_inspection" style="@style/CarViewListItemText" />
+                <TextView android:textColor="@color/red_1" android:gravity="center|right" android:id="@id/personal_inspection_status_text" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/CarViewListItemText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/vehicle_registration_view" android:layout_marginBottom="@dimen/span36" style="@style/CarViewListItem">
+                <TextView android:text="@string/car_info_vehicle_registration" style="@style/CarViewListItemText" />
+                <TextView android:textColor="@color/red_1" android:gravity="center|right" android:id="@id/personal_registration_status_text" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/CarViewListItemText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/use_this_vehicle_button" android:layout_width="fill_parent" android:text="@string/use_this_vehicle" style="@style/FullBleedButton" />
+</LinearLayout>

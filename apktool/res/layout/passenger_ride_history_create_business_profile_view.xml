@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/create_business_profile_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@drawable/business_profile_background_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/span18" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:background="@drawable/ic_oval" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/icon_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_suitcase" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/span12" android:paddingTop="@dimen/span12" android:paddingRight="@dimen/span12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/big_text_2" android:textColor="@color/primary_text" android:gravity="center" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span4" android:text="@string/business_onboard_profile_title" />
+        <TextView android:textSize="@dimen/normal_text" android:textColor="@color/dove" android:gravity="center" android:id="@id/description_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_ride_history_profile_description" />
+    </LinearLayout>
+    <Button android:id="@id/get_started_button" android:background="@drawable/btn_mulberry_rounded" android:layout_margin="@dimen/span8" android:text="@string/get_started" style="@style/FullBleedButtonV2" />
+</LinearLayout>

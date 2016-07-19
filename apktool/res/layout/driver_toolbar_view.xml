@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lyft.widgets.ForegroundRoundedImageView android:layout_gravity="center" android:id="@id/user_image_view" android:focusable="false" android:layout_width="@dimen/span32" android:layout_height="@dimen/span32" android:layout_marginLeft="@dimen/span8" android:layout_centerVertical="true" app:riv_border_color="@color/white" app:riv_oval="true" />
+        <me.lyft.android.ui.DriverModeToggleView android:id="@id/driver_mode_toggle" android:visibility="visible" style="@style/DriverModeToggle" />
+        <ImageButton android:id="@id/overflow_toolbar_item" android:background="@color/transparent" android:paddingLeft="@dimen/span64" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/span8" android:src="@drawable/ic_more_dark_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/driver_secondary_container" android:layout_width="@dimen/span44" android:layout_height="@dimen/span44" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider_view" android:background="@drawable/actionbar_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

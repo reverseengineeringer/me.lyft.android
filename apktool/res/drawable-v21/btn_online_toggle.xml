@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/mulberry"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/ic_online_dark" />
+            <item android:drawable="@drawable/ic_online" />
+        </selector>
+    </item>
+</ripple>

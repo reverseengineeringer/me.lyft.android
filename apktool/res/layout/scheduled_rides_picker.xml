@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/micro_text" android:textColor="@color/charcoal" android:gravity="center" android:background="@drawable/bg_grey_rounded_top_corners" android:paddingTop="@dimen/span6" android:paddingBottom="@dimen/span6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/passenger_ride_pickup_scheduled_rides_picker_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/scheduled_rides_list" android:background="@drawable/bg_white_rounded_bottom_corners" android:paddingBottom="@dimen/span4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

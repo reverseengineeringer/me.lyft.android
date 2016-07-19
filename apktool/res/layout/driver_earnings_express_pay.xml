@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/big_text_1" android:textStyle="bold" android:layout_gravity="center" android:id="@id/express_pay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" android:text="@string/express_pay_actionbar_title" android:drawableLeft="@drawable/graphic_bolt_small" android:drawableRight="@drawable/ic_info" android:drawablePadding="@dimen/span8" />
+    <TextView android:textSize="@dimen/driver_ride_rating_and_earning_price_text" android:layout_gravity="center" android:id="@id/express_pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PrimaryText" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/span72" android:layout_marginLeft="@dimen/span72" android:layout_marginRight="@dimen/span72">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dials_layout_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/get_paid_button" android:background="@drawable/gradient_purple" android:paddingLeft="@dimen/span16" android:paddingTop="@dimen/span8" android:paddingRight="@dimen/span16" android:paddingBottom="@dimen/span8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_paid" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_14" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/subtitle_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" />
+    <TextView android:textStyle="italic" android:gravity="center" android:id="@id/express_pay_disclaimer" android:background="@color/bone" android:padding="@dimen/span8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span16" android:lines="2" />
+</merge>

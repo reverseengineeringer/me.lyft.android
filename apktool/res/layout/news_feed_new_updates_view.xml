@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedNewUpdatesView android:id="@id/newsfeed_header_view" android:background="@drawable/ic_feed_header" android:layout_width="fill_parent" android:layout_height="@dimen/span44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/collapsed_view" android:paddingTop="@dimen/span8" android:paddingBottom="@dimen/span8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/big_text_1" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span8" android:text="@string/news_feed_title" />
+        <TextView android:textSize="@dimen/xsmall_text" android:textColor="@color/white" android:gravity="center" android:id="@id/newsfeed_items_total_view" android:background="@drawable/feed_update_count" android:paddingLeft="@dimen/span4" android:paddingTop="@dimen/span1" android:paddingRight="@dimen/span4" android:paddingBottom="@dimen/span1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedNewUpdatesView>

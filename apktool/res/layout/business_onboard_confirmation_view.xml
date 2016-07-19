@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.Toolbar android:layout_gravity="center|top" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/span12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom|center" android:background="@drawable/ic_oval" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/icon_image_view" android:background="@drawable/ic_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span2" android:text="@string/business_onboard_just_one_more_step" style="@style/PrimaryText" />
+        <TextView android:gravity="center" android:id="@id/email_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span12" style="@style/SecondaryText" />
+        <View style="@style/HorizontalDialogDivider" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span12" android:text="@string/business_onboard_resend_email_description" style="@style/SecondaryText" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/normal_text" android:gravity="center" android:id="@id/edit_email_button" android:background="@drawable/btn_rounded" android:padding="@dimen/span4" android:clickable="true" android:layout_width="@dimen/span88" android:layout_height="@dimen/span32" android:layout_margin="@dimen/span12" android:text="@string/edit" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/normal_text" android:gravity="center" android:id="@id/resend_email_button" android:background="@drawable/btn_rounded" android:padding="@dimen/span4" android:clickable="true" android:layout_width="@dimen/span88" android:layout_height="@dimen/span32" android:layout_margin="@dimen/span12" android:text="@string/resend" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="bottom|center" android:id="@id/done_button" android:background="@drawable/btn_mulberry_rounded" android:layout_margin="@dimen/span8" android:text="@string/done" style="@style/FullBleedButtonV2" />
+</FrameLayout>

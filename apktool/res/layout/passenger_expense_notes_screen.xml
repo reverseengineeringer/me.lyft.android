@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ride_map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <me.lyft.android.controls.PassengerToolbar android:id="@id/toolbar" style="@style/PassengerToolbar" />
+    <me.lyft.android.ui.HeightObservableLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/passenger_ride_bottom" android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="bottom|center|left" android:id="@id/back_button" android:background="@drawable/circular_map_button" android:layout_marginBottom="@dimen/span8" android:src="@drawable/ic_back_arrow" style="@style/PassengerMapButton" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_map_widget_item" android:paddingLeft="@dimen/span16" android:paddingTop="@dimen/span20" android:paddingRight="@dimen/span16" android:paddingBottom="@dimen/span20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/charcoal_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expense_note_sub_title" />
+            <com.lyft.widgets.EditTextWithoutEnter android:textSize="14.0sp" android:gravity="top" android:id="@id/expense_note_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span24" android:hint="@string/expense_note_hint" android:maxLength="100" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionDone" style="@style/EditText" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/charcoal_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span20" android:text="@string/expense_code_sub_title" />
+            <com.lyft.widgets.EditTextWithoutEnter android:textSize="14.0sp" android:gravity="top" android:id="@id/expense_code_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span24" android:hint="@string/expense_note_hint" android:maxLength="32" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionDone" style="@style/EditText" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span8">
+            <Button android:id="@id/submit_button" android:background="@drawable/btn_pink_rounded" android:text="@string/submit_button" style="@style/FullBleedButtonV2" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/submit_button_progressbar" android:padding="@dimen/span12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/full_bleed_button_height_v2" style="@style/LoadingProgressBar" />
+        </FrameLayout>
+    </me.lyft.android.ui.HeightObservableLayout>
+    <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" layout="@layout/warning" />
+</FrameLayout>

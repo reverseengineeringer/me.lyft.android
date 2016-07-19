@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/RideTypeInfoDialog.HeaderText" android:gravity="center" android:id="@id/title" android:paddingTop="@dimen/span20" android:layout_width="fill_parent" android:layout_columnSpan="2" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ride_type_image" android:layout_width="fill_parent" android:layout_height="102.0dip" android:src="@drawable/ic_ride_type_details_default" android:layout_columnSpan="2" style="@style/RideTypeInfoDialog.HeaderRow" />
+    <TextView android:textAppearance="@style/RideTypeInfoDialog.HeaderDetailText" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ride_type_description" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:maxWidth="300.0dip" android:layout_columnSpan="2" style="@style/RideTypeInfoDialog.HeaderRow" />
+    <android.support.v4.widget.Space android:layout_height="@dimen/span20" android:layout_columnSpan="2" />
+    <TextView android:id="@id/field_1_label" style="@style/RideTypeInfoDialog.Column.Left" />
+    <TextView android:id="@id/field_1_value" style="@style/RideTypeInfoDialog.Column.Right" />
+    <android.support.v4.widget.Space android:layout_height="@dimen/span6" android:layout_columnSpan="2" />
+    <TextView android:id="@id/field_2_label" style="@style/RideTypeInfoDialog.Column.Left" />
+    <TextView android:id="@id/field_2_value" style="@style/RideTypeInfoDialog.Column.Right" />
+    <android.support.v4.widget.Space android:layout_height="@dimen/span6" android:layout_columnSpan="2" />
+    <TextView android:id="@id/field_3_label" style="@style/RideTypeInfoDialog.Column.Left" />
+    <TextView android:id="@id/field_3_value" style="@style/RideTypeInfoDialog.Column.Right" />
+    <android.support.v4.widget.Space android:layout_height="@dimen/span6" android:layout_columnSpan="2" />
+    <TextView android:id="@id/field_4_label" style="@style/RideTypeInfoDialog.Column.Left" />
+    <TextView android:id="@id/field_4_value" style="@style/RideTypeInfoDialog.Column.Right" />
+    <TextView android:textColor="@color/dove" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/footer" android:paddingLeft="@dimen/span8" android:paddingTop="@dimen/span20" android:paddingRight="@dimen/span8" android:paddingBottom="@dimen/span20" android:layout_width="fill_parent" android:layout_columnSpan="2" />
+</GridLayout>

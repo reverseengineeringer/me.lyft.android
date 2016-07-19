@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedItemView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/card_container" android:background="@drawable/ic_feed_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/container" android:paddingTop="@dimen/span12" android:paddingBottom="@dimen/span12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/message_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span8">
+                    <ImageView android:id="@id/message_icon_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span12" />
+                    <TextView android:textSize="@dimen/big_text_1" android:textStyle="bold" android:textColor="@color/charcoal" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/message_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:maxLines="2" android:includeFontPadding="false" />
+                </LinearLayout>
+                <View android:id="@id/divider" android:background="@color/grey_7" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <ImageView android:id="@id/message_main_image_view" android:layout_width="fill_parent" android:layout_height="@dimen/span142" android:layout_marginTop="@dimen/span12" />
+                <TextView android:textSize="@dimen/big_text_1" android:textColor="@color/charcoal" android:id="@id/message_description_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span10" android:includeFontPadding="false" />
+                <FrameLayout android:layout_gravity="center" android:id="@id/message_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span12">
+                    <View android:id="@id/progress_horizontal" android:background="@drawable/progress_moon" android:layout_width="fill_parent" android:layout_height="@dimen/span4" />
+                    <View android:id="@id/progress_horizontal_bar" android:background="@drawable/progress_purple" android:layout_width="0.0dip" android:layout_height="@dimen/span4" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/normal_text" android:textColor="@color/dove" android:id="@id/message_progress_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span4" />
+                <Button android:textSize="@dimen/news_feed_button_text" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/message_button" android:layout_width="fill_parent" android:layout_height="@dimen/span56" android:layout_marginTop="@dimen/span12" android:textAllCaps="false" android:stateListAnimator="@null" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:id="@id/bottom_view" android:background="@drawable/ic_feed_card_bg_divider" android:layout_width="fill_parent" android:layout_height="@dimen/span8" />
+</me.lyft.android.ui.driver.ridescreens.tabs.newsfeed.NewsFeedItemView>

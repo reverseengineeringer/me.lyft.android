@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ride_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ride_map_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <me.lyft.android.ui.ScreensContainer android:id="@id/driver_screen_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/driver_bottom_navigation_view" />
+    <me.lyft.android.controls.DriverBottomNavigationView android:id="@id/driver_bottom_navigation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.dialogs.EditPickupOnboardingDialogView android:background="@color/black_alpha_80" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/span50" android:paddingRight="@dimen/span50" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:padding="@dimen/span18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pin_silhouette_light" />
+        <TextView android:textSize="23.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/adjust_location_onboarding_title" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:paddingTop="@dimen/span12" android:paddingBottom="@dimen/span24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/adjust_location_onboarding_message" />
+        <me.lyft.android.ui.dialogs.DialogButton android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/ok_button" android:background="@drawable/btn_transparent_white_border_rounded" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/ok_button" />
+    </LinearLayout>
+</me.lyft.android.ui.dialogs.EditPickupOnboardingDialogView>

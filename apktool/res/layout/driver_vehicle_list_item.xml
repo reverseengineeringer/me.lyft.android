@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/span220" android:divider="@drawable/horizontal_divider"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/vehicle_image_view" android:layout_width="@dimen/span220" android:layout_height="@dimen/span100" android:src="@drawable/ic_car_silhouette" />
+    <TextView android:layout_gravity="center" android:id="@id/vehicle_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" android:layout_marginTop="@dimen/span16" android:layout_marginRight="@dimen/span16" style="@style/PrimaryText" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span8">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/license_plate" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SecondaryText" />
+        <TextView android:id="@id/vehicle_status" android:padding="@dimen/span4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" style="@style/VehicleStatusButton" />
+    </LinearLayout>
+</LinearLayout>

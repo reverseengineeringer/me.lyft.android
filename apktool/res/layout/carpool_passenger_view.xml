@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.driver.carpool.CarpoolPassengerView android:gravity="center" android:orientation="vertical" android:id="@id/carpool_passenger_view" android:paddingTop="@dimen/span20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_details_click_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/profile_photo_view" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginBottom="@dimen/span8" app:riv_oval="true" />
+        <TextView android:gravity="center" android:id="@id/message_text_view" android:paddingBottom="@dimen/span16" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CarpoolPrimaryText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/contact_buttons_layout" android:paddingBottom="@dimen/span16" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/xsmall_text" android:gravity="center" android:id="@id/call_button" android:background="@drawable/btn_rounded" android:layout_width="74.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/span6" android:text="@string/carpool_call_button" style="@style/CarpoolPrimaryText" />
+        <TextView android:textSize="@dimen/xsmall_text" android:gravity="center" android:id="@id/text_button" android:background="@drawable/btn_rounded" android:layout_width="74.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/span6" android:text="@string/carpool_text_button" style="@style/CarpoolPrimaryText" />
+    </LinearLayout>
+    <View style="@style/HorizontalDialogDivider" />
+</me.lyft.android.ui.driver.carpool.CarpoolPassengerView>

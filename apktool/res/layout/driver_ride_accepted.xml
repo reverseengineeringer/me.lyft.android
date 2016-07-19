@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/driver_ride_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <me.lyft.android.ui.driver.DriverToolbarView android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <me.lyft.android.ui.driver.DriverAddressInfoView android:orientation="horizontal" android:id="@id/driver_ride_destination_toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        </me.lyft.android.ui.HeightObservableLayout>
+        <include android:layout_gravity="center_horizontal" android:id="@id/warning_fragment_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span8" android:layout_marginRight="@dimen/span8" layout="@layout/warning" />
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@id/driver_ride_bottom">
+            <View android:background="@drawable/bg_top_shadow" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/dialog_text" android:gravity="center" android:id="@id/banner_text" android:padding="@dimen/span8" android:visibility="gone" android:layout_margin="@dimen/span8" android:maxLines="2" android:includeFontPadding="false" android:layout_alignParentTop="true" style="@style/BannerText" />
+            <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/driver_ride_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span4">
+                <me.lyft.android.ui.driver.RideOverviewMapButton android:gravity="center" android:orientation="horizontal" android:id="@id/ride_overview_map_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/span56" android:layout_marginLeft="@dimen/span12" />
+                <ImageButton android:id="@id/follow_current_location_button" android:layout_marginRight="@dimen/span12" android:src="@drawable/ic_current_location" android:layout_alignParentRight="true" style="@style/DriverMapButton" />
+            </RelativeLayout>
+            <View android:background="@drawable/bg_footer_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/span8" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/bottom_button_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <me.lyft.android.ui.UserImageView android:id="@id/ride_in_progress_passenger_photo_image_view" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+                <TextView android:textSize="@dimen/big_text_4" android:textColor="@color/color_button_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/driver_ride_button_text_view" android:background="@drawable/btn_charcoal" android:paddingLeft="@dimen/span16" android:layout_width="fill_parent" android:layout_height="100.0dip" android:text="@string/driver_ride_arrive_button" android:maxLines="2" android:includeFontPadding="false" android:layout_alignParentTop="true" />
+            </LinearLayout>
+        </me.lyft.android.ui.HeightObservableLayout>
+    </LinearLayout>
+    <me.lyft.android.ui.tooltips.TooltipContainerView android:id="@id/tooltip_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

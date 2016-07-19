@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.BackButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+        <me.lyft.android.controls.PhoneInputView android:id="@id/phone_input_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center" android:id="@id/inline_error_txt" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:hint="@string/landing_phone_number_description" style="@style/InlineErrorText" />
+    <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/span8" android:layout_weight="1.0" />
+    <me.lyft.android.controls.NumericKeyboard android:id="@id/keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/span4" />
+</LinearLayout>

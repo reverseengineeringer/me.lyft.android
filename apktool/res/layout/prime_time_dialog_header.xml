@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/grey_5" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_prime_time_request_ride_dialog" />
+    <TextView android:textSize="@dimen/big_text_2" android:textColor="@color/charcoal" android:id="@id/prime_time_percentage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_pt_charcoal" android:drawablePadding="@dimen/span8" style="@style/DialogHeader" />
+</LinearLayout>

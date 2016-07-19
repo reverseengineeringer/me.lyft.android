@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/banner_text_view" android:background="@drawable/bg_grey_rounded_top_corners" android:padding="@dimen/span4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/PassengerFooterBanner" />
+    <View style="@style/HorizontalDialogDivider" />
+    <me.lyft.android.ui.passenger.v2.inride.RideDetailView android:gravity="center" android:orientation="horizontal" android:id="@id/ride_detail_view" android:background="@color/bone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View style="@style/HorizontalDialogDivider" />
+    <me.lyft.android.ui.passenger.v2.PickupAndDestinationAddressView android:id="@id/pickup_destination_address_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <me.lyft.android.ui.passenger.v2.inride.InRideActionsView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

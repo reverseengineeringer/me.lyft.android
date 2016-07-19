@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:id="@id/payment_label_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span4" android:text="@string/rate_and_pay_payment_method_label" android:drawableLeft="@drawable/ic_payment" android:drawablePadding="@dimen/span8" style="@style/PrimaryText" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/text_14" android:ellipsize="end" android:gravity="right" android:id="@id/selected_payment_method_label_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span4" android:maxWidth="@dimen/span156" android:singleLine="true" style="@style/PrimaryText" />
+    <ImageView android:gravity="end" android:id="@id/concur_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span4" android:layout_marginRight="@dimen/span4" android:src="@drawable/ic_concur_logo_small" />
+</merge>

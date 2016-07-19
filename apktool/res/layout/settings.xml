@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <me.lyft.android.controls.MenuButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/edit_profile_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span8" style="@style/CellButton">
+                <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center" android:id="@id/profile_user_photo_image_view" android:layout_width="@dimen/span28" android:layout_height="@dimen/span28" android:src="@drawable/ic_silhouette_square" app:riv_oval="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/span16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/charcoal" android:gravity="center_vertical" android:id="@id/user_name_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_profile_onboard_label" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/dove" android:id="@id/user_join_date_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_up_your_business_profile" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/span16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/charcoal" android:gravity="center_vertical" android:id="@id/email_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/span48" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_email" android:drawablePadding="@dimen/span16" style="@style/PrimaryText" />
+                <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/phone_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/span48" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_phone_settings" android:drawablePadding="@dimen/span16" style="@style/PrimaryText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/business_profile_button" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:layout_marginBottom="@dimen/span8" style="@style/CellButton">
+                <ImageView android:background="@drawable/ic_work" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/span16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/span48">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/charcoal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_profile_onboard_label" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/dove" android:id="@id/business_profile_onboard_sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_up_your_business_profile" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/become_driver_splitter" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <Button android:id="@id/become_driver_button" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_become_driver_label" android:drawableLeft="@drawable/ic_drive_charcoal" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+            <View android:id="@id/become_carpool_driver_splitter" android:visibility="gone" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <Button android:id="@id/become_carpool_driver_button" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_become_carpool_driver_label" android:drawableLeft="@drawable/ic_carpool" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/carpool_driver_switch_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0.0dip" android:layout_height="@dimen/span48" android:text="@string/settings_carpool_requests_label" android:drawableLeft="@drawable/ic_carpool" android:drawablePadding="@dimen/span16" android:layout_weight="1.0" style="@style/CellButton" />
+                <com.lyft.widgets.Toggle android:id="@id/carpool_driver_switch" android:layout_width="@dimen/span48" android:layout_height="@dimen/span36" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/navigation_settings_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center|left" android:id="@id/navigation_settings_button" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_navigation_label" android:drawableLeft="@drawable/ic_navigation" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+                <TextView android:textSize="@dimen/normal_text" android:textStyle="italic" android:textColor="@color/charcoal" android:layout_gravity="center|right" android:id="@id/selected_navigation_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span16" />
+            </FrameLayout>
+            <Button android:id="@id/carpool_driver_dashboard_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_driver_dashboard_label" android:drawableLeft="@drawable/ic_odometer" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+            <Button android:id="@id/driver_license_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_driver_license_label" android:drawableLeft="@drawable/ic_license" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/driver_shortcut_switcher_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/span48">
+                <TextView android:layout_width="wrap_content" android:layout_height="@dimen/span48" android:text="@string/profile_driver_shortcut_label" android:drawableLeft="@drawable/ic_shortcut" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.lyft.widgets.Toggle android:id="@id/driver_shortcut_switch" android:layout_width="@dimen/span48" android:layout_height="@dimen/span36" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16" />
+            </LinearLayout>
+            <View android:id="@id/services_splitter" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <FrameLayout android:id="@id/services_settings_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center|left" android:id="@id/services_settings_button" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_services_label" android:drawableLeft="@drawable/ic_services" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+                <TextView android:textSize="@dimen/normal_text" android:textStyle="italic" android:textColor="@color/charcoal" android:layout_gravity="center|right" android:id="@id/services_indicator_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/span16" />
+            </FrameLayout>
+            <View android:id="@id/logout_splitter" android:layout_marginTop="@dimen/span8" android:layout_marginBottom="@dimen/span8" style="@style/SplitterMaterial" />
+            <Button android:id="@id/logout_button" android:layout_width="fill_parent" android:layout_height="@dimen/span48" android:text="@string/settings_logout_label" android:drawableLeft="@drawable/ic_logout" android:drawablePadding="@dimen/span16" style="@style/CellButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

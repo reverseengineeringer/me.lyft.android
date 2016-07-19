@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.controls.MenuButtonToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/normal_text" android:id="@id/payment_title" android:layout_margin="16.0dip" android:text="@string/payment_card_list_title" style="@style/SecondaryText" />
+            <me.lyft.android.ui.payment.PaymentCardListWidgetView android:orientation="vertical" android:id="@id/payment_card_list_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <me.lyft.android.ui.payment.PaymentCreditsListWidgetView android:id="@id/payment_credits_list_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View style="@style/SplitterMaterial" />
+            <TextView android:textSize="@dimen/normal_text" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip" android:text="@string/payment_credits_title" style="@style/SecondaryText" />
+            <LinearLayout android:orientation="vertical" android:id="@id/add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/add_coupon_view" />
+            <LinearLayout android:orientation="vertical" android:id="@id/payment_defaults_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/SplitterMaterial" />
+                <TextView android:textSize="@dimen/normal_text" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip" android:text="@string/payment_defaults_title" style="@style/SecondaryText" />
+                <me.lyft.android.ui.payment.PaymentBusinessDefaultsWidgetView android:id="@id/payment_business_defaults_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/concur_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/SplitterMaterial" />
+                <TextView android:textSize="@dimen/normal_text" android:layout_marginLeft="@dimen/span16" android:layout_marginTop="@dimen/span16" android:layout_marginBottom="10.0dip" android:text="@string/payment_send_ride_receipts_title" style="@style/SecondaryText" />
+                <me.lyft.android.ui.payment.ConcurView android:id="@id/concur" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="italic" android:layout_gravity="center" android:layout_marginLeft="@dimen/span16" android:layout_marginRight="@dimen/span16" android:layout_marginBottom="@dimen/span36" android:text="@string/payment_concur_footer" style="@style/SecondaryText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

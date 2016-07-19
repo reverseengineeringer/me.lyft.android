@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.lyft.android.ui.invites.InviteFriendsSlidableDialogView android:orientation="vertical" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_sheet_background" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/slidable_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/grey_4" android:gravity="center_vertical" android:id="@id/slidable_title" android:paddingLeft="@dimen/span16" android:layout_width="fill_parent" android:layout_height="@dimen/span56" android:text="@string/invite_share_referral_code" />
+        <me.lyft.android.ui.invites.InviteFriendsSlidableItem android:id="@id/slidable_item_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <me.lyft.android.ui.invites.InviteFriendsSlidableItem android:id="@id/slidable_item_email" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <me.lyft.android.ui.invites.InviteFriendsSlidableItem android:id="@id/slidable_item_clipboard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</me.lyft.android.ui.invites.InviteFriendsSlidableDialogView>

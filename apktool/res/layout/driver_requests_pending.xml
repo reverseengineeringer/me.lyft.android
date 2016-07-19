@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.lyft.android.ui.HeightObservableLayout android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:padding="@dimen/span8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/text_16" android:textStyle="normal" android:textColor="@color/primary_text" android:id="@id/decline_button" android:background="@drawable/rounded_map_button" android:paddingLeft="@dimen/span12" android:paddingRight="@dimen/span12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="false" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_lyft_white" android:scaleType="center" />
+        </FrameLayout>
+    </me.lyft.android.ui.HeightObservableLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageButton android:layout_gravity="right" android:id="@id/map_zoom_button" android:background="@drawable/circular_map_button" android:layout_marginRight="@dimen/span20" android:layout_marginBottom="@dimen/span8" android:src="@drawable/btn_map_icon_selector" style="@style/PassengerMapButton" />
+    <me.lyft.android.ui.HeightObservableLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager android:id="@id/carpool_requests_view_pager" android:layout_width="fill_parent" android:layout_height="@dimen/span132" android:layout_marginBottom="@dimen/span8" />
+        <FrameLayout android:id="@id/accept_ride_button_container" android:paddingBottom="@dimen/span20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:ellipsize="end" android:id="@id/accept_ride_button" android:background="@drawable/btn_mulberry_rounded" android:padding="@dimen/span8" android:maxLines="1" style="@style/FullBleedButtonV2" />
+        </FrameLayout>
+    </me.lyft.android.ui.HeightObservableLayout>
+</LinearLayout>
